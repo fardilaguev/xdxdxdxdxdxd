@@ -1,0 +1,14 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+thead tr, th {
+    background-color: aqua;
+    border:2px solid black;
+    border-collapse: collapse;
+}
+tbody td{
+    background-color: ;
+    border-collapse: collapse;
+    border:2px solid black;
+}

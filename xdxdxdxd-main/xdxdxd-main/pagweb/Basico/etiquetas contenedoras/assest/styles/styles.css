@@ -1,0 +1,10 @@
+.container{
+    width: 600px;
+    height: auto;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    image-rendering: pixelated; 
+}

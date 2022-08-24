@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <label for="noF"><em>Formulario Número 45</em></label>
+            <input type="hidden" id="noF" name="noF" value="45">
+            <hr>
+    <form id="dataform">
+        <fieldset><legend>Datos Personales:</legend>
+            <label form="name">Nombre:</label>
+            <input type="text"
+            id="name"
+            name="name"
+            placeholder="introduce tu nombre"
+            minlength="3"
+            maxlength="50"
+            title="Introdice al menos 3 caracteres máximo 50"
+            tabindex="0"
+            autofocus="true"
+            autocomplete="off"
+            required
+            ><br><br>
+            <select name="typeDocument" id="typeDocument">
+                <option value="nada" select="selected">Seleccione un tipo de documento</option>
+                <option value="cc">Cédula de Identidad</option>
+                <option value="ti">Tarjeta de Identidad</option>
+                <option value="ce">Cédula de extranj eria</option>
+            </select>
+            <label for="document">No Documento:</label>
+            <input type="number" id="document" name="document" placeholder="introduce tu documento de indentidad" min="2" max="infinite" tabindex="1">
+            <br>
+            <label for="estadoCivil">Estado Civil:</label>
+            <input type="radio" name="eCivil" id="eCivil" value="soltero">Soltero(a)
+            <input type="radio" name="eCivil" id="eCivil" value="casado">Casado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="divor">Divorciado(a)
+            <input type="radio" name="eCivil" id="eCivil" value="viudo">Viudo(a)
+            <br>
+            <label for="telefono">Ingrese Número Celular:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Solo números">
+            <label for="web">Ingresa tu pagina web:</label>
+            <input type="url" name="web" id="web" placeholder="Url de la pagina">
+            <br>
+            ¿Con cuantos libros cuenta en su biblioteca?:
+            <select type="datalist" name="lista" id="lista">
+                <option value="nada">Seleccione cantidad de libros</option>
+                <option value="1-5">1-5</option>
+                <option value="5-10">5-10</option>
+                <option value="10-20">10-20</option>
+                <option value="mas">Más de 20 libros</option>
+                <option value="0">No tiene libros</option>
+            </select>
+            
+        </fieldset>
+        <hr>
+        <fieldset><legend>Información de Estudio y otros:</legend>
+            <label for="colores">Color Favorito:</label>
+            <input type="color" id="colores">
+            <label for="dateInsc">Fecha de Inscripción:</label>
+            <input type="date" id="dateInsc">
+            <br>
+            <label for="week">Selecciona la semana de descanso:</label>
+            <input type="week" name="week" id="week"
+            min="2022-W51" max="2022-W52">/
+            <label for="hora">Hora de entrada:</label>
+            <input type="time" name="hora" id="hora">-
+            <label for="hora2">Hora de salida:</label>
+            <input type="time" name="hora2" id="hora2">
+            <br>
+            <label for="documentFile">Cargue los documentos de requisitos:</label>
+            <input type="file" name="file" id="documentFile">
+            
+        </fieldset>
+        <hr>
+        <label for="lenguajes">Lenguajes de programación</label>
+        <select name="lenguajes" id="lenguajes">
+            <optgroup label="Lenguajes Tipados">
+                <option value="java">Java</option>
+                <option value="cSharp">C#</option>
+                <option value="c">C++</option>
+            </optgroup>
+            <optgroup label="Lenguajes no Tipados">
+                <option value="python">Python</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+        </select><br>
+        <label for="acepta">¿Acepta términos y condiciones?</label>
+        <input type="checkbox" id="terminos">
+        <br>
+        <label for="valora">¿Que te parecio nuestra atención?: 0</label>
+        <input type="range" name="valora" id="valora">10
+        <br>
+        <label for="reco">buzón de sugerencias:</label>
+        <br>
+        <textarea id="reco" name="reco" rows="3" cols="50">Aquí podras hacer tus quejas, reclamos y recomendaciones para nosotros, ten un buen día :)
+        </textarea>
+        <hr>
+        <input type="submit" value="Envío de datos"> <!--PHP-->
+        <button id="validar">Validar</button> <!--Js-->
+        <input type="reset" value="Limpiar">
+        </form>
+        <script src="./scripts/main.js"></script>
+
+
+    
+</body>
+</html>
